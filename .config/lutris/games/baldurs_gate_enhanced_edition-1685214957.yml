@@ -1,0 +1,29 @@
+game:
+  exe: /home/mentalist/Games/gog/baldurs-gate-enhanced-edition/start.sh
+game_slug: baldurs-gate-enhanced-edition
+linux: {}
+name: 'Baldur''s Gate: Enhanced Edition'
+requires: null
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: _xXx_AUTO_ELF_xXx_
+  installer:
+  - extract:
+      dst: $CACHE
+      file: goginstaller
+      format: zip
+  - merge:
+      dst: $GAMEDIR
+      src: $CACHE/data/noarch
+  system: {}
+service: gog
+service_id: '1207666353'
+slug: baldurs_gate_enhanced_edition
+system:
+  env:
+    LD_LIBRARY_PATH: /home/mentalist/Games/gog/baldurs-gate-enhanced-edition/lib
+variables: {}
+version: GOG
+year: null

@@ -1,0 +1,1223 @@
+starship init nu | save -f ~/.cache/starship/init.nu
+ls
+hx .cache/starship/init.nu
+cd .config/starship/
+ls
+mv starship.toml ../
+cd ,,
+cd ..
+rm starship
+ls
+hx starship.toml
+ls
+hx .config/nushell/config.nu
+echo /etc/shells
+cat /etc/shells
+sudo hx /etc/shells
+which nu
+sudo nano /etc/shells
+chsh --help
+which chsh
+lchsh --help
+sudo lchsh mentalist
+hx .config/alacritty/alacritty.yml
+zellij
+hx .config/zellij/config.kdl
+nvm
+hx .config/nushell/env.nu
+hx .config/nushell/config.nu
+$env | reject config | transpose key val | each {|r| echo $"let-env ($r.key) = '($r.val)'"} | str join (char nl)
+hx .config/nushell/config.nu
+hx .config/nushell/env.nu
+hx .config/nushell/env_vars.nu
+$env | reject config | transpose key val | each {|r| echo $"let-env ($r.key) = '($r.val)'"} | str join (char nl)
+hx .config/nushell/env_vars.nu
+zellij
+hx .config/nushell/env.nu
+hx .config/nushell/env_vars.nu
+which hx
+nano .config/nushell/env_vars.nu
+nano ./.config/nushell/env_vars.nu
+nano /home/mentalist/.config/nushell/env_vars.nu
+cd .config/
+ls
+cd nushell/
+ls
+nano env_vars.nu
+/usr/bin/nano env_vars.nu
+nvm
+echo $SHELL
+echo $env.SHELL
+lchsh 
+cd .config/nushell 
+ls
+rm env_vars.nu
+/usr/bin/nano env.nu
+nvm
+hx .bash_profile
+/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh
+ll /home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh
+ls -al /home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh
+cd /home/linuxbrew/.linuxbrew/opt/nvm/
+ls
+chmod +x nvm.sh
+nvm --help
+source .bash_profile
+hx .bash_profile
+hx .config/alacritty/alacritty.yml
+hx .profile
+nvm --help
+nvm
+echo $env.NVM_BIN
+hx .bashrc
+cd bin
+ls
+cd ..
+ls
+cd .nvm/
+ls
+ls -al
+cd /home/linuxbrew/.linuxbrew/opt/nvm/libexec/
+ls
+ls -al
+less nvm.sh
+cd 
+hx .profile
+sudo dnf install ffmpeg
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+bash
+cd Downloads/
+ls
+cd softether-vpnclient-v4.41-9787-rtm-2023.03.14-linux-x64-64bit/
+ls
+cd vpnclient/
+ls
+vpnclient start
+./vpnclient start
+sudo ./vpnclient start
+sudo ./vpnclient stop
+sudo ./vpnclient start
+./vpncmd
+cat /proc/sys/net/ipv4/ip_forward
+ip a
+HX ./vpn_client.config
+hx ./vpn_client.config
+sudo ./vpnclient stop
+sudo ./vpnclient start
+./vpncmd
+hx ./vpn_client.config
+sudo ./vpnclient stop
+hx ./vpn_client.config
+sudo ./vpnclient start
+./vpncmd
+sudo nmcli
+sudo nm
+sudo nmcli show -a
+ip link show
+sudo nmcli dev set vpn_vpn_se managed yes
+sudo nmcli
+nmcli --help
+nmcli dev --help
+nmcli dev modify vpn_vpn_se IPV4.address 192.168.30.77
+nmcli dev status
+nmcli dev modify vpn_vpn_se IPV4.address 192.168.30.77
+sudo nmcli dev modify vpn_vpn_se IPV4.address 192.168.30.77
+nmcli
+nmcli dev --help
+nmcli dev show
+nmcli dev --help
+dhclient vpn_vpn_se
+sudo dhclient vpn_vpn_se
+ip a
+sudo ./vpnclient stop
+sudo ./vpnclient start
+./vpncmd
+sudo su
+cd
+cd bin
+hx start_lasco_vpn.sh
+ls 
+cd ..
+cd Downloads/
+ls
+mv softether-vpnclient-v4.41-9787-rtm-2023.03.14-linux-x64-64bit softether
+ls
+mv softether ../software/
+cd ..
+cd software/
+ls
+cd ..
+cd software/
+mv vpnclient softether
+cd ..
+cd bin
+ls
+hx start_lasco_vpn.sh
+id -u
+sudo id -u
+hx start_lasco_vpn.sh
+hx stop_lasco_vpn.sh
+chmod +x start_lasco_vpn.sh
+chmod +x stop_lasco_vpn.sh
+cd
+start_lasco_vpn.sh 
+sudo start_lasco_vpn.sh 
+sudo /home/fulvio/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+netstat -tn
+netstat -tr
+sudo route del default gw 192.168.1.0 wlp3s0
+route del default gw 192.168.1.0 wlp3s0
+sudo route del default gw 192.168.1.0 wlp3s0
+netstat -tr
+ip show
+ip addr show
+cd /etc
+ls
+cd nm
+cd NetworkManager/
+ls
+sudo hx NetworkManager.conf
+hx NetworkManager.conf
+cd conf.d/
+ls
+cd ..
+ls
+cd system-connections/
+ls
+cd ..
+cd NetworkManager
+sudo nmcli dev modify vpn_vpn_se IPV4.address 192.168.30.180
+sudo nmcli
+sudo nmcli dev --help
+sudo nmcli dev set vpn_vpn_se managed yes
+sudo nmcli
+sudo nmcli dev modify vpn_vpn_se IPV4.address 192.168.30.180
+sudo nmcli con --help
+sudo nmcli con up vpn_vpn_se
+sudo nmcli con show
+man nmcli
+sudo nmcli connection add type ethernet autoconnect no ifname vpn_vpn_se
+sudo nmcli connection modify ethernet-vpn_vpn_se IPV4.address 192.168.30.77
+sudo nmcli c up ethernet-vpn_vpn_se
+sudo nmcli c delete ethernet-vpn_vpn_se
+sudo nmcli connection add type vpn autoconnect no ifname vpn_vpn_se
+man nmcli
+sudo nmcli connection add type tun autoconnect no ifname vpn_vpn_se
+sudo nmcli connection modify tun-vpn_vpn_se IPV4.address 192.168.30.77
+sudo nmcli connection up tun-vpn_vpn_se
+sudo nmcli connection del tun-vpn_vpn_se
+sysctl -p
+sudo dhclient vpn_se
+ifconfig
+ps -edaf
+ps
+ps | grep dhclient
+sudo kill 558825
+sudo kill 58825
+sudo dhclient vpn_se
+ip show
+ip a show
+sudo dhclient vpn_vpn?se
+sudo dhclient vpn_vpn_se
+ip config
+ip addr
+netstat -tn
+netstat -tr
+sudo route del default gw 192.168.30.0 vpn_vpn_se
+sudo route del destination 192.168.30.0 vpn_vpn_se
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+zellij
+ls
+cd Games/
+ls
+cd gog/
+ls
+cd baldurs-gate-enhanced-edition/
+ls
+./start.sh
+head start.sh
+cd support/
+ls
+less gog_com.shlib
+uname -a
+dnf search compat-openssl10
+dnf search openssl10
+cd ..
+ls
+cd game
+ls
+cd data/
+ls
+cd ..
+ls
+cd ..
+ls
+cd support/
+ls
+cd yad
+ls
+cd 64
+ls
+less yad
+cd ..
+ls
+./start.sh
+brew search openssl10
+brew
+hx .config/alacritty/alacritty.yml
+source .bashrc
+source .profile
+cd .config/
+ls
+cd alacritty/
+ls
+nano alacritty.yml
+cd
+nano .bashrc
+ls
+nano .profile
+ls -al
+ls
+nano .bashrc
+nano .bash_profile
+nano .bashrc
+nano .profile
+sudo lchsh mentalist
+ls
+hx
+hx .bashrc
+ls
+hx
+dnf search openssl
+brew search openssl
+cd Games/
+ls
+cd gog/
+ls
+cd baldurs-gate-enhanced-edition/
+l
+ls
+./start.sh
+brew search openssl
+brew install openssl@1.1
+./start.sh
+cd 
+cd ../linuxbrew/
+ls
+cd ..
+ls
+cd linuxbrew/
+ls
+cd ls -al
+ls -al
+cd .linuxbrew/
+ls
+cd lib
+ls
+ls | filter openssl
+ls | grep openssl
+ls | grep ssl
+ls -al | grep ssl
+cd //
+cd
+brew uninstall openssl@1.1
+brew search openssl@1.0
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/64555220bfbf4a25598523c2e4d3a232560eaad7/Formula/openssl.rb -f
+cd ..
+mkdir x86_64-linux-gnu
+sudo mkdir x86_64-linux-gnu
+cd x86_64-linux-gnu/
+sudo cp 
+sudo cp /home/mentalist/Downloads/libssl_1.0.0_64-bit/* .
+cd Games/
+ls
+cd gog/
+ls
+cd baldurs-gate-enhanced-edition/
+./start.sh
+cd ..
+sudo rm -r x86_64-linux-gnu/
+LD_LIBRARY_PATH=$PWD/libs ./start.sh
+LD_LIBRARY_PATH=$env.PWD/libs ./start.sh
+zellij
+cd /
+ls
+cd media/
+ls
+cd ..
+cd
+sshfs --help
+ssh fulvio2@prenotazioni.parigi.it
+#sshfs fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs /mnt/prenotazioni.parigi.it
+mkdir /mnt/prenotazioni.parigi.it
+sudo mkdir /mnt/prenotazioni.parigi.it
+sshfs fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs /mnt/prenotazioni.parigi.it
+sudo rm -r /mnt/prenotazioni.parigi.it/
+mkdir /media/prenotazioni.parigi.it
+mkdir -p 
+mkdir -p ~/mnt/prenotazioni.parigi.it
+mkdir --help
+mkdir -p ~/mnt
+mkdir ~/mnt
+mkdir  ~/mnt/prenotazioni.parigi.it
+sshfs fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs ~/mnt/prenotazioni.parigi.it
+cd mnt
+cd prenotazioni.parigi.it/
+fusermount -u 
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs/ ~/mnt/prenotazioni.parigi.it/
+cd prenotazioni.parigi.it/
+ls -al
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs/ ~/mnt/prenotazioni.parigi.it/
+sudo hx /etc/fuse.conf
+sudo nano /etc/fuse.conf
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs/ ~/mnt/prenotazioni.parigi.it/
+cd prenotazioni.parigi.it/
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sudo sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs/ ~/mnt/prenotazioni.parigi.it/
+cd prenotazioni.parigi.it/
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sudo fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd
+cd .ssh/
+ls
+cd ..
+ssk-keygen -t ecdsa
+ssh-keygen -t ecdsa
+ssh-copy-id --help
+ssh-copy-id -i 
+ssh-copy-id -i ~/.ssh/id_ecdsa fulvio2@prenotazioni.parigi.it
+ssh fulvio@prenotazioni.parigi.it
+ssh fulvio2@prenotazioni.parigi.it
+hx .ssh/config
+sshfs -o allow_other Parigi.it ~/.mnt
+hx .ssh/config
+sshfs -o allow_other Parigi ~/.mnt
+cd .ssh
+ls
+cd ..
+ls -al
+cd .ssh
+ls
+ls -al
+cd ..
+ssh parigi
+ssh Parigi
+sshfs -o allow_other Parigi ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio2@Parigi ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs/ ~/mnt/prenotazioni.parigi.it/
+cd mnt/prenotazioni.parigi.it/
+cd mnt
+ls
+ls 0al
+ls -al
+id -u
+id -f
+id -g
+id -G
+groups
+cd /etc
+ls
+ls -al 
+ls -al | grep fuse
+cd -
+cd prenotazioni.parigi.it/
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+ls
+cd prenotazioni.parigi.it/
+ls
+cd ..
+#sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/ ~/mnt/prenotazioni.parigi.it/
+man sshfs
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/home/fulvio2 ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/home/fulvio2/ ~/mnt/prenotazioni.parigi.it/
+ssh Parigi
+sshfs -o allow_other fulvio2@prenotazioni.parigi.it:/var/www/vhosts ~/mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+ls
+cd prenotazioni.parigi.it/
+cd ..
+cd prenotazioni.parigi.it/
+ls
+cd helloeurope.it
+cd
+ssh-copy-id -i ~/.ssh/id_ecdsa fulvio@prenotazioni.parigi.it
+ssh fulvio@prenotazioni.parigi.it
+hx .ssh/config
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other fulvio@prenotazioni.parigi.it:/var/www/vhosts ~/mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+ls
+cd prenotazioni.parigi.it/
+cd helloeurope.it/
+ssh Parigi
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd ..
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd ..
+cd prenotazioni.parigi.it/
+sshfs -o allow_other -o reconnect -C fulvio@prenotazioni.parigi.it ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other -o reconnect -C fulvio@prenotazioni.parigi.it:/ ~/mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+ls
+cd var
+cd www
+cd vhosts/
+ls
+cd prenotazioni.parigi.it/
+ls -al
+cd prenotazioni.parigi.it/
+ssh Parigi
+ls
+cd prenotazioni.parigi.it/
+zellij
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/ ~/mnt/prenotazioni.parigi.it/
+cd mnt/prenotazioni.parigi.it/
+ls
+cd /var/www/vhosts
+cd var/www/vhosts
+ls
+cd prenotazioni.parigi.it/
+cd 
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+ssh Parigi
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/ ~/mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+ls
+cd var/www/vhosts
+cd prenotazioni.parigi.it/
+cd
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd /mnt/
+cd
+cd mnt/
+cd prenotazioni.parigi.it/
+ls
+cd ..
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/var/www/vosts/prenotazioni.parigi.it/httpdocs ~/mnt/prenotazioni.parigi.it/
+ssh Parigi
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs ~/mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+cd 
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+ls
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd ..
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd ..
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs ./mnt/prenotazioni.parigi.it/
+cd mnt
+cd prenotazioni.parigi.it/
+ls
+cd ..
+cd prenotazioni.parigi.it/
+cd prenotazioni.parigi.it/manager
+cd ..
+ls
+ls -al
+cd
+ssh Parigi
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+sshfs -o allow_other -o reconnect fulvio@prenotazioni.parigi.it:/var/www/vhosts/prenotazioni.parigi.it/httpdocs ./mnt/prenotazioni.parigi.it/
+cd mnt/
+cd prenotazioni.parigi.it/
+sudo nmcli c s vpn_vpn_se
+sudo nmcli d s vpn_vpn_se
+sudo nmcli d s vpn_se
+sudo nmcli d vpn_se
+sudo nmcli d --help
+sudo nmcli d status vpn_vpn_se
+sudo nmcli d status vpn_se
+sudo nmcli
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo nmcli
+sudo nmcli d status vpn_vpn_se
+sudo nmcli d status 
+sudo nmcli d set vpn_vpn_se manages yes 
+sudo nmcli d set vpn_vpn_se managed yes 
+sudo nmcli d status 
+sudo nmcli d up vpn_vpn_se
+sudo nmcli d modify vpn_vpn_se ipv4.method auto
+dhclient vpn_vpn_se
+sudo dhclient vpn_vpn_se
+ps -edaf | grep dhclient
+ps | grep dhclient
+ps --help
+ps -l | grep dhclient
+ssh fulvio@192.168.30.3
+dhclient vpn_vpn_se
+ssh fulvio@192.168.30.3
+netstat -tr
+sudo dhclient vpn_vpn_se
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+software/softether/vpncmd /CLIENT /CMD AccountList
+software/softether/vpncmd /CLIENT /CMD AccountConnect WorkLasco
+software/softether/vpncmd localhost /CLIENT /CMD AccountList
+hx bin/start_lasco_vpn.sh
+hx bin/stop_lasco_vpn.sh
+stop_lasco_vpn.sh
+sudo stop_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+ssh fulvio@192.168.30.3
+dhclient vpn_vpn_se
+sudo dhclient vpn_vpn_se
+netstat -tr
+route --help
+route del --help
+dhclient --help
+ps -l | grep dhclient
+kill 10371
+sudo kill 10371
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+netstat -tr
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+dhclient --help
+dhclient vpn_vpn_se
+sudo dhclient vpn_vpn_se
+route del 192.168.30.0/24 dev vpn_vpn_se
+sudo route del 192.168.30.0/24 dev vpn_vpn_se
+sudo route del 192.168.30.0 dev vpn_vpn_se
+netstat -tr
+sudo route del defult dev vpn_vpn_se
+sudo route del default dev vpn_vpn_se
+netstat -tr
+ssh fulvio@192.168.30.3
+ip addr show
+sudo route del 192.168.30.0 dev vpn_vpn_se
+netstat -tr
+route --help
+sudo route del 192.168.30.0 dev vpn_vpn_se
+sudo route add default gw 192.168.30.1 vpn_vpn_se
+netstat -tr
+sudo route del default dev vpn_vpn_se
+sudo route add gw 192.168.30.1 vpn_vpn_se
+sudo route add 192.168.30.0 gw 192.168.30.1 vpn_vpn_se
+netstat -tr
+ssh fulvio@192.168.30.3
+netstat -trv
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+netstat -tr
+ps -l | grep dhclient
+sudo kill 12802
+kill --help
+ps | filter (|x| $x.name == "dhclient")
+ps | filter {|x| $x.name == "dhclient"}
+ps -l
+ps -l | grep dhclient
+hx bin/stop_lasco_vpn.sh
+kill --help
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"}
+ps -l | filter {|x| $x.name == "dhclient"} | kill $in.pid
+ps -l | filter {|x| $x.name == "dhclient"} | kill $in[0].pid
+ps -l | filter {|x| $x.name == "dhclient"} | first | kill $in.pid
+sudo ps -l | filter {|x| $x.name == "dhclient"} | first | kill $in.pid
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+netstat -tr
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+hx bin/start_lasco_vpn.sh
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+netstat -tr
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+netstat -tr
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+netstat -tr
+sudo route del default gw dev vpn_vpn_se
+netstat -tr
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+hx bin/stop_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ps -l | filter {|x| $x.name == "dhclient"} | first | sudo kill $in.pid
+ps -l | grep dhclient
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+ip route del default gw dev vpn_vpn_se
+ip route 
+ip route --help
+ip route help
+ip route 
+ip route del 192.168.40.0/24 dev vpn_vpn_se
+sudo ip route del 192.168.40.0/24 dev vpn_vpn_se
+ip route 
+sudo ip route del 192.168.40.0/24 via 192.168.30.180 dev vpn_vpn_se
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ip route 
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+ip route del default dev vpn_vpn_se
+sudo ip route del default dev vpn_vpn_se
+ip route 
+sudo ip route del 192.168.30.0/24 dev vpn_vpn_se
+ip route 
+sudo ip route add 80.211.59.97/32 via 192.168.0.1 dev wlp3s0
+sudo ip route add 80.211.59.97/32 via 192.168.0.1
+ip route 
+sudo ip route add 80.211.59.97/32 via 192.168.30.8
+sudo ip route add 80.211.59.97/32 via 192.168.30.8 dev vpn_vpn_se
+sudo ip route add 80.211.59.97/32 via 192.168.1.1
+ip route 
+sudo ip route add 192.168.30.0/24 dev vpn_vpn_Se
+sudo ip route add 192.168.30.0/24 dev vpn_vpn_se
+ip route 
+hx bin/start_lasco_vpn.sh
+hx bin/stop_lasco_vpn.sh
+hx bin/start_lasco_vpn.sh
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ip route del 80.211.59.97/32
+sudo ip route del 80.211.59.97/32
+ip route 
+sudo /home/mentalist/bin/start_lasco_vpn.sh 
+ssh fulvio@192.168.30.3
+traceroute
+traceroute 192.168.30.3
+ip route 
+wget -qO- http://ipecho.net/plain ; echo
+sudo /home/mentalist/bin/stop_lasco_vpn.sh 
+ip route
+sudo dnf search l2tp
+sudo dnf install NetworkManager-l2tp-gnome
+ssh fulvio@192.168.30.3
+ip route
+ip addr show
+ssh fulvio@192.168.30.3
+ip addr show
+ssh fulvio@192.168.30.3
+ssh fulvio@192.168.30.4
+ssh fulvio@192.168.30.6
+ip addr show
+cd bin
+ls
+unzip intellexlab-files-main.zip 
+ls
+cd intellexlab-files-main/
+ls
+cd softether-vpn-client/
+ls
+cp * ../../
+cd ..
+rm -rf intellexlab-files-main.zip
+rm -rf intellexlab-files-main
+ls
+hx vpn_config
+/home/mentalist/software/softether/vpncmd
+/home/mentalist/software/softether/vpnclient start
+/home/mentalist/software/softether/vpnclient stop
+sudo /home/mentalist/software/softether/vpnclient stop
+sudo /home/mentalist/software/softether/vpnclient start
+/home/mentalist/software/softether/vpncmd
+sudo /home/mentalist/software/softether/vpnclient stop
+cd ../software/softethe
+cd ../software/softether/
+ls
+less vpn_client.config
+cd 
+cd bin
+hx vpn_config
+ls
+./setup-client.sh
+cd ../software/softether/
+ls
+rm vpn_client.config
+cd ..
+cd bin
+hx vpn_config
+./setup-client.sh
+../software/softether/vpncmd
+./setup-client.sh
+./vpn-connect.sh
+ls
+rm *
+ls
+cd ..
+rm -rf software
+L%@Scb+RsFm*KM9AexitL%@Scb+RsFm*KM9A
+zellij 
+ip route
+ssh fulvio@192.168.30.6
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+;ls
+ls
+cd research/
+ls
+a_players_guide_to_talislanta.pdf
+open a_players_guide_to_talislanta.pdf
+cd Documents/
+ls
+mkdir DrivingLicence
+mv IMG* DrivingLicence/
+ls
+mkdir knowledgebase
+cd knowledgebase/
+hx
+cd
+cd Games/
+ls
+cd gog/
+ls
+cd pillars-of-eternity/
+ls
+./start.sh
+dnf provides libGLU.so.1
+sudo dfn install mes-libGLU
+sudo dnf install mes-libGLU
+sudo dnf install mesa-libGLU
+./start.sh
+less start.sh
+hx start.sh
+ls
+hx start.sh
+./start.sh
+sudo dnf search gnome-shell-extension-pop-shell
+sudo dnf install gnome-shell-extension-pop-shell
+ssh fulvio@192.168.30.6
+ip addr show
+ssh fulvio@192.168.30.6
+ssh fulvio@192.168.30.18
+route -n
+sudo ip rout del 192.168.1.0 dev wlp3s0
+sudo ip route del 192.168.1.0 dev wlp3s0
+sudo ip route del 192.168.1.0
+sudo ip route del 192.168.1.1
+sudo ip route del 80.211.59.97
+route -n
+sudo ip route del 192.168.1.0
+ssh fulvio@192.168.30.18
+ping 192.168.30.18
+ping 192.168.30.6
+route -n
+sudo ip route 
+sudo ip route del 192.168.1.0/24
+sudo ip route 
+route -n
+ssh fulvio@192.168.30.18
+sudo ip route 
+ssh fulvio@192.168.30.11
+ssh fulvio@192.168.30.18
+ping 192.168.30.1
+ping 192.168.30.18
+ssh fulvio@192.168.30.18
+ip route
+ssh fulvio@192.168.30.18
+hx .ssh/config
+ssh-copy-id -i ~/.ssh/id_ecdsa fulvio@192.168.30.18
+ssh fulvio@LascoS2
+ssh fulvio@192.168.30.18
+sshfs -o allow_other -o reconnect fulvio@192.168.30.18:/ ./mnt/prenotazioni.parigi.it/
+cd mnt/prenotazioni.parigi.it/
+ls
+cd c:
+fusermount -u ~/mnt/prenotazioni.parigi.it/
+cd mnt/
+ls
+mkdir LascoS2
+mkdir LascoS3
+mkdir Cartrade
+mkdir CartradeFrabce
+mv CartradeFrabce CartradeFrance
+mkdir MarottaCRM
+mkdir MarottaSensori
+cd
+sshfs -o allow_other -o reconnect LascoS2:/ ./mnt/LascoS2/
+cd mnt/LascoS2/
+ls
+cd C:
+bash
+ls
+ls
+date
+date humanize
+date now
+ls -al
+hx bashrc
+hx .bashrc
+zellij
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+ls
+mkdir source
+cd source/
+cargo new spiritpeak
+cd spiritpeak/
+ls
+hx
+ps -l | grep firefox
+ps -l | grep firefox 
+ps -l | grep "^firefox$" 
+ps -l | grep "firefox" 
+ps -l | filter {|x| $x.name == "firefox"} 
+ps -l | filter {|x| $x.name == "firefox"}  | kill
+ps -l | filter {|x| $x.name == "firefox"}  | kill $in.2
+ps -l | filter {|x| $x.name == "firefox"}  | print $in
+ps -l | filter {|x| $x.name == "firefox"}  | print $in.1
+ps -l | filter {|x| $x.name == "firefox"}  | print $in.0
+ps -l | filter {|x| $x.name == "firefox"}  | print $in.pid
+ps -l | filter {|x| $x.name == "firefox"}  | kill $in.pid
+ps -l | filter {|x| $x.name == "firefox"}  | kill $in[0].pid
+ps -l | filter {|x| $x.name == "firefox"}  | first | echo $in.2
+ps -l | filter {|x| $x.name == "firefox"}  | first | echo $in.1
+ps -l | filter {|x| $x.name == "firefox"}  | first | echo $in.0
+ps -l | filter {|x| $x.name == "firefox"}  | first | echo $in.pid
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill $in.pid
+ps -l | filter {|x| $x.name == "firefox"} 
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill $in.pid
+ps -l | filter {|x| $x.name == "firefox"} 
+kill -help
+kill --help
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill --force $in.pid
+ps -l | filter {|x| $x.name == "firefox"} 
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill --force $in.pid
+kill --help
+ps -l | filter {|x| $x.name == "firefox"} 
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill --force $in.pid
+ps -l | filter {|x| $x.name == "firefox"}  | first | kill -s 9 $in.pid
+ps -l | filter {|x| $x.name == "firefox"} 
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+ls
+cd source/
+ls
+cd spiritpeak/
+ls
+cd ..
+ls
+cd ..
+ls
+cd source/
+ls
+cd spiritpeak/
+ls
+mkdir assets
+mkdir engine
+rm engine
+hx
+mkdir crates
+cargo new --lib game
+cargo new --lib engine
+ls
+rm -rf engine
+rm -rf game
+cargo new --lib crates/engine
+cargo new --lib crates/game
+ls
+hx
+ls
+git status
+cd crates/engine/
+cargo search tracing
+cargo add tracing
+cargo remove tracing
+cd ..
+ls
+cd ..
+ls
+cd crates/
+ls
+cd engine/
+ls
+cd ..
+cargo add tracing tracing-subscriber
+hx
+rustup component add rust-analyzer
+hx
+rustfmt --print-config default
+rustfmt --print-config default > rustfmt.toml
+ls
+mv > rustfmt.toml
+hx rustfmt.toml
+hx
+zellij
+ls
+brew update
+cat .ssh/id_ecdsa.pub
+brew upgrade
+cat .ssh/id_ecdsa.pub
+hx .ssh/config
+cd bin
+ls
+hx lasco_mount_client_folder.sh
+cd
+lasco_mount_client_folder.sh LascoS2
+cd bin
+ls
+chmod +x lasco_mount_client_folder.sh
+cd ..
+lasco_mount_client_folder.sh LascoS2
+cd work/mnt/LascoS2/
+ls
+cd c:
+fusermount -u ~/work/mnt/LascoS2
+cd work/mnt/
+ls
+cd MarottaCRM/
+ls
+c:
+cd c:
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+ls
+cd source/
+ls
+cd spiritpeak/
+ls
+hz
+hx
+cargo run
+:wq
+git status
+zellij
+df -h
+gpared
+rustup update
+rustup toolchain
+rustup toolchain list
+ls
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+ls
+cd source/
+ls
+cd spiritpeak/
+ls
+hx
+ls
+rustup toolchain list
+rustup toolchain list -v
+rustc --version
+hx
+zellij 
+glxinfo
+screenfetch
+glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+lsmod | grep -Ei 'nouveau|nvidia'
+ps -edaf | grep Pill
+ps -l | grep Pill
+kill 5865
+lscpi
+lspci
+lspci -v
+zellij
+dmesg
+dmesg | grep Unhandled
+dmesg | grep -i unhandled
+lscpi 
+lspci
+lspci -v
+lspci -v | grep -t5 vga
+lspci -v | grep -A 5 vga
+sudo lspci -v | grep -A 5 vga
+sudo lspci -v | grep -A 5 VGA
+sudo lspci -v | grep -A 6 VGA
+sudo lspci -v | grep -A 7 VGA
+sudo lspci -v | grep -A 8 VGA
+sudo lspci -v | grep -A 10 VGA
+sudo lspci -v | grep -A 15 VGA
+sudo lspci -v | grep -A 30 VGA
+sudo lspci -v | grep -A 35 VGA
+sudo lspci -v | grep -A 25 VGA
+sudo dmesg | egrep "input|i8042|i2c"
+sudo lsblk -e7
+sudo btrfs filesystem resize -400G /
+sudo btrfs device usage /
+sudo btrfs filesystem resize -200G /
+gparted
+sudo umount /
+sudo btrfs filesystem resize +100G /
+cd /srv/
+ls
+mkdir home
+cd
+cd -
+sudo mkdir home
+cd home/
+ls
+sudo mount /dev/nvme0n1p4 /srv/home
+sudo df -Th
+sudo cp -aR /home/* /srv/home/
+ls
+ls -l mentalist/
+ls -l linuxbrew/
+ls -al linuxbrew/
+sudo mv /home /home.bak
+cd /srv
+sudo mv /home /home.bak
+rm -rf /srv/home
+sudo rm -rf /srv/home
+cd ..
+sudo rm -rf /srv/home
+sudo umount /srv/home
+ls
+pwd
+df -h
+sudo df -Th
+ls bin/
+lasco_mount_client_folder.sh LascoS3
+cd work/mnt/LascoS3/
+ls
+c:
+cd C:
+hx .bashrc
+zellij
+sudo dnf update
+dnf search sway
+sudo dnf instal sway
+sudo dnf install sway
+mkdir -p .config/sway
+mkdir -.config/sway
+mkdir .config/sway
+cp /etc/sway/config .config/sway/
+swaymsg -t get_inputs
+sudo swaymsg -t get_inputs
+Fulvio1981@
+mkdir Software
+cd Software/
+git clone https://github.com/crispyricepc/sway-nvidia
+sudo install -Dm755 sway-nvidia/sway-nvidia.sh "/usr/local/bin/sway-nvidia"
+sudo install -Dm644 sway-nvidia/sway-nvidia.desktop "/usr/share/wayland-sessions/sway-nvidia.desktop"
+sudo install -Dm644 sway-nvidia/wlroots-env-nvidia.sh "/usr/local/share/wlroots-nvidia/wlroots-env-nvidia.sh"
+ls
+cd mnt
+ls
+cd ..
+cd work/
+ls
+cd mnt/
+ls
+cd ..
+hx bin/lasco_mount_client_folder.sh
+rm -rf ./mnt/
+ls
+cd Public/
+ls
+cd ..
+ls
+cd Documents/
+ls
+cd ..
+ls
+cd Documents/ls
+cd ..
+cd
+cd Downloads/
+ls
+rm -rf *
+ls
+cd ..
+l
+ls
+cd Software/
+sl
+ls
+cd sway-nvidia/
+ls
+less sway-nvidia.sh
+cd ..
+rm -r sway-nvidia/
+ls
+cd ..
+ls
+dnf search sway
+dnf info sway
+sudo dnf install sway
+dnf search i3
+sudo dnf install i3
+cd Games/
+ls
+cd ..
+ls
+cd projects/
+ls
+cd games/
+ls
+cd spiritpeak/
+cd source/
+ls
+cd spiritpeak/
+ls
+hx
+ls
+sudo dnf remove i3
+sudo dnf install sway
+cd Software/
+ls
+git clone https://github.com/crispyricepc/sway-nvidia
+sudo install -Dm755 sway-nvidia/sway-nvidia.sh "/usr/local/bin/sway-nvidia"
+sudo install -Dm644 sway-nvidia/sway-nvidia.desktop "/usr/share/wayland-sessions/sway-nvidia.desktop"
+sudo install -Dm644 sway-nvidia/wlroots-env-nvidia.sh "/usr/local/share/wlroots-nvidia/wlroots-env-nvidia.sh"
+cd projects/
+ls
+cd games/spiritpeak/source/
+ls
+cd spiritpeak/
+ls
+hx
+ls
+ls -al
+cargo -q run --release
+hx

@@ -1,0 +1,28 @@
+game:
+  exe: start.sh
+game_slug: pillars-of-eternity
+linux: {}
+name: Pillars of Eternity
+requires: null
+script:
+  files:
+  - goginstaller: N/A:Please select the GOG.com Linux installer
+  game:
+    exe: start.sh
+  installer:
+  - extract:
+      dst: $CACHE/GOG
+      file: goginstaller
+      format: zip
+  - merge:
+      dst: $GAMEDIR
+      src: $CACHE/GOG/data/noarch/
+service: gog
+service_id: '1207666813'
+slug: pillars-of-eternity-gog
+system:
+  gamescope_window_mode: ''
+  prime: true
+variables: {}
+version: GOG
+year: 2015
